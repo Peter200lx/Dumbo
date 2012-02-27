@@ -1,0 +1,28 @@
+# I'll add more description to these settings in the future
+# 
+# debug: <true|false>
+#    Don't enable this unless you want a bunch of data dumped
+#    to the console logs.
+# 
+# permissions: <true|false>
+#    While permissions are very handy and often the best way
+#    to control the use of tools, some people do not like them.
+#    If that is the case, set this to false to disable
+#    permission checking.
+# 
+# fly: bind: <id>
+#    This gives a mapping of what item to use for flying.
+#    If a tool is not wanted, you can disable it by removing
+#    the permission from the (or all) user(s).
+#    However, setting it's value to zero will also disable 
+#    the tool, it but with a warning to the console.
+
+debug: false
+permissions: true
+fly:
+  enabled: true
+  bind: 288     # FEATHER
+  thrust: 8
+  cruise: 110
+  float: true
+  teleport: false

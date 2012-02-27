@@ -1,0 +1,40 @@
+name: Dumbo
+main: com.github.peter200lx.dumbo.Dumbo
+version: 0.1
+website: https://github.com/Peter200lx/dumbo
+author: peter200lx
+description: >
+             Hold the Magic Feather! Now you can fly!
+commands:
+  dumbo:
+    description: Holder command for reload and more
+    usage: |
+           /<command> [reload|tools]
+           Example: /<command> - Prints help for plugin.
+           Example: /<command> reload - Reloads settings from disk
+           Example: /<command> tool - Lists tool flying is currently using.
+  fly:
+    description: Allows for configuration options to be changed on the fly. (pun intended)
+    usage: |
+           /<command> [on|off|toggle|hover|tel|thrust|cruise]
+permissions:
+    dumbo.*:
+        description: Gives access to all permissions for dumbo
+        default: op
+        children:
+            dumbo.reload: true
+            dumbo.ctrl: true
+            dumbo.fly: true
+            dumbo.float: true
+            dumbo.teleport: true
+    dumbo.reload:
+        description: Allows the player to reload dumbo from configuration file.
+    dumbo.ctrl:
+        description: Allows the player to change plugin data on the fly
+    dumbo.fly:
+        description: Allows the player to fly by right-clicking with the proper tool.
+        default: true
+    dumbo.float:
+        description: Allows the player to float by left-clicking with the proper tool.
+    dumbo.teleport:
+        description: Teleports the player when crouching instead of changing velocity.
